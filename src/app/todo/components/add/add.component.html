@@ -1,0 +1,12 @@
+<div class="example-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Descripción</mat-label>
+    <input
+      matInput
+      name="descripcionInput"
+      [(ngModel)]="descripcionInput"
+      (keyup.enter)="agregarTarea()"
+      #description
+    />
+  </mat-form-field>
+</div>

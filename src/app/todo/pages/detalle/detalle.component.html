@@ -1,0 +1,16 @@
+<div class="example-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Descripción</mat-label>
+    <input matInput name="tarea.descripcion" [(ngModel)]="tarea.descripcion" />
+
+    <br />
+    <br />
+    <mat-checkbox name="tarea.hecho" [(ngModel)]="tarea.hecho">
+      Completado
+    </mat-checkbox>
+  </mat-form-field>
+  <br />
+  <button mat-raised-button color="primary" (click)="actualizarTarea()">
+    Guardar
+  </button>
+</div>

@@ -1,0 +1,6 @@
+<app-add (update)="update()"></app-add>
+<app-lista
+  (eliminarTodo)="eliminarTarea($event)"
+  (actualizarTodo)="actualizarTarea($event)"
+  [todos]="todos | async"
+></app-lista>
